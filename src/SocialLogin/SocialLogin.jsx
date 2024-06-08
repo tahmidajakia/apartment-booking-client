@@ -29,7 +29,7 @@ const SocialLogin = () => {
         <div>
              <div className="divider w-full"></div> 
             <div>
-              <button onClick={handleGoogleSignIn} className="btn">
+              <button onClick={handleGoogleSignIn} className="btn bg-green-700 text-white rounded-xl px-4 py-3">
                <FaGoogle></FaGoogle>
                   GOOGLE
               </button>

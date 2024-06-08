@@ -5,6 +5,7 @@ import { AuthContext } from "../../Providers/AuthProviders";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import SocialLogin from "../../SocialLogin/SocialLogin";
+import { FaUser } from "react-icons/fa";
 
 
 const Register = () => {
@@ -55,10 +56,13 @@ const Register = () => {
     
     return (
         <div>
-            <div className="text-center text-3xl mt-10 mb-16 font-semibold text-orange-600">
+            <div className="text-center text-3xl mt-10 mb-16 font-semibold text-green-600">
        <h1 className="text-3xl font-bold"> Please Register</h1>
        </div>
-        <div className="flex justify-center items-center shadow-2xl bg-orange-100 w-1/2 mx-auto mb-24">
+       <div className="flex text-5xl justify-center items-center -mb-4 ">
+       <FaUser className="border border-green-700 bg-green-700 text-white p-3 rounded-full" ></FaUser>
+       </div>
+        <div className="flex justify-center items-center shadow-2xl bg-green-100 w-1/2 mx-auto mb-24">
       <form  onSubmit={handleSubmit(onSubmit)} className="card-body ">
       <div className="form-control">
           <label className="label">
@@ -91,13 +95,14 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-orange-600 text-white">Register</button>
+          <button className="btn bg-green-600 text-white">Register</button>
         </div>
-        <h1 className="mt-10">Already have an account <Link className="text-orange-600 font-bold" to='/login'>Login</Link></h1>
-      </form>
-      <div className='flex justify-center items-center'>
+        <h1 className="mt-10">Already have an account <Link className="text-green-600 font-bold" to='/login'>Login</Link></h1>
+        <div className='flex justify-center items-center'>
       <SocialLogin></SocialLogin>
       </div>
+      </form>
+      
       
     </div>
     <div className="text-center mt-5">

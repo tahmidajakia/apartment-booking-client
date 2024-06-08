@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProviders";
 import Swal from "sweetalert2";
 import SocialLogin from "../../SocialLogin/SocialLogin";
+import { FaUser } from "react-icons/fa";
 
 
 const Login = () => {
@@ -45,10 +46,14 @@ const Login = () => {
     }
     return (
         <div>
-            <div className="text-center text-3xl mt-10 mb-8 font-semibold text-orange-600">
+            <div className="text-center text-3xl mt-10 mb-8 font-semibold text-green-600">
        <h1 className="text-3xl font-bold" > Please Login</h1>
        </div>
-        <div className="flex justify-center items-center shadow-2xl bg-orange-100 w-1/2 mx-auto mb-28">
+       <div className="flex text-5xl justify-center items-center -mb-4 ">
+       <FaUser className="border border-green-700 bg-green-700 text-white p-3 rounded-full" ></FaUser>
+       </div>
+        <div className="flex justify-center items-center shadow-2xl bg-green-100 w-1/2 mx-auto mb-28">
+        
       <form onSubmit={handleLogin}   className="card-body">
         <div className="form-control">
           <label className="label">
@@ -66,19 +71,17 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-orange-600 text-white">Login</button>
+          <button className="btn bg-green-600 text-white">Login</button>
         </div>
-        <h1 className="mt-10">Do not have an account please <Link className="text-orange-600 font-bold" to='/register'>Register</Link></h1>
+        <h1 className="mt-10">Do not have an account please <Link className="text-green-600 font-bold" to='/register'>Register</Link></h1>
         <div className="flex">
         <div className=" flex justify-center mx-auto mt-5">
-        <button  className="bg-orange-600 text-white p-3 rounded-lg">Google</button>
+        <SocialLogin></SocialLogin>
         </div>
         </div>
       </form>
-      <div className='flex justify-center items-center'>
-      <SocialLogin></SocialLogin>
-      </div>
     </div>
+   
         </div>
     );
 };
