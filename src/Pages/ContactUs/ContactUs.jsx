@@ -3,7 +3,7 @@
 const ContactUs = () => {
     return (
         <div className="mb-14 mt-10">
-            <div className='bg-pink-50 rounded-xl mr-32 ml-32 pt-12 pb-28'>
+            <div className='border border-green-800 rounded-xl mr-32 ml-32 pt-12 pb-28'>
                 <div className='text-center flex justify-center items-center'>
                 <form>
                 <div className='flex gap-5'>
