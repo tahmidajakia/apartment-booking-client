@@ -42,6 +42,7 @@ const ApartmentDetails = () => {
         .then(res => res.json())
         .then(data => {
             console.log(data)
+            
         })
 
     }
@@ -76,9 +77,6 @@ const ApartmentDetails = () => {
            </p>
             </div>
             <div className="space-y-4 w-1/2">
-            <div className="text-center text-3xl  font-semibold text-orange-600">
-       <h1 className="text-3xl font-bold"> Please Register</h1>
-       </div>
         <div className="flex justify-center items-center shadow-2xl bg-orange-100 ml-16  mx-auto mb-24">
       <form onSubmit={handleAgreement}   className="card-body ">
       <div className="form-control">

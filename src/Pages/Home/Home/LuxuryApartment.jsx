@@ -57,7 +57,9 @@ const LuxuryApartment = () => {
 
     return (
         <div className="max-w-screen-2xl container mx-auto xl:px-16 mt-16">
-            <h1>luxury apartment</h1>
+            <div className="flex text-center justify-center mb-16 mt-14 font-bold">
+            <h1 className="text-4xl">Some Of Our <br /> Luxury Apartment</h1>
+            </div>
 
 
             <Slider {...settings}>

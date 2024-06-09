@@ -17,6 +17,9 @@ const MakePayment = () => {
     
     return (
         <div>
+          <div className="flex justify-center">
+          <h1 className="font-bold mb-10 text-3xl">My Agreement Apartment Details</h1>
+          </div>
             <div>
                 {
                     agreement.map(agreement => <div key={agreement._id} className="flex justify-center items-center border border-green-800 ml-16  mx-auto mb-24"
