@@ -10,6 +10,10 @@ const MakePayment = () => {
     const [agreement] = useAgreements();
     const axiosPublic = useAxiosPublic();
     const {user} = useContext(AuthContext)
+
+    const totalPrice = agreement.reduce((total,agreement) => total + agreement.rent,0);
+    // const realPrice = totalPrice - agreement.discount 
+    // console.log(realPrice)
     
     return (
         <div>
@@ -63,6 +67,12 @@ const MakePayment = () => {
                               <span className="label-text">Date</span>
                             </label>
                             <input type="date"   name="date" placeholder="Date" className="input input-bordered"  />
+                          </div>
+                          <div className="form-control w-full">
+                            <label className="label">
+                              <span className="label-text">Discount</span>
+                            </label>
+                            <input type="discount" defaultValue={agreement.discount}   name="discount" placeholder="Discount" className="input input-bordered"  />
                           </div>
                          </div>
                          <div className="flex justify-center items-center">
