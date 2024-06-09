@@ -1,8 +1,11 @@
-import img from '../../../assets/images/2374.png_1200 - Copy.png'
+import img from '../../../assets/images/testimonial.jpg'
+import test1 from '../../../assets/images/testt1.jpg'
+import test2 from '../../../assets/images/testt2.jpg'
+import test3 from '../../../assets/images/testt3.jpg'
 
 const Testimonials = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto xl:px-16 mt-5">
+    <div className="max-w-screen-2xl container mx-auto xl:px-16 mt-16">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="md:w-1/2">
         <img src={img} alt="" />
@@ -19,17 +22,17 @@ const Testimonials = () => {
               <div className="avatar-group -space-x-6 rtl:space-x-reverse">
                 <div className="avatar">
                   <div className="w-12">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <img src={test1} />
                    </div>
                    </div>
                 <div className="avatar">
                     <div className="w-12">
-                      <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                      <img src={test2} />
                     </div>
                </div>
                    <div className="avatar">
                      <div className="w-12">
-                        <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <img src={test3} />
                      </div>
                    </div>
                   <div className="avatar placeholder">
