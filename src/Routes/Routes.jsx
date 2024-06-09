@@ -20,6 +20,7 @@ import MemberProfile from "../Pages/Member/MemberProfile";
 import ManageCoupons from "../Pages/Admin/ManageCoupons";
 import MakePayment from "../Pages/Member/MakePayment";
 import Payment from "../Pages/Dashboard/Payment/Payment";
+import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
 
 
 
@@ -88,6 +89,10 @@ import Payment from "../Pages/Dashboard/Payment/Payment";
         {
           path: 'makePayment',
           element: <MakePayment></MakePayment>,
+        },
+        {
+          path: 'paymentHistory',
+          element: <PaymentHistory></PaymentHistory>
         },
         {
           path: 'payment',

@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import useAgreements from "../../../Hooks/useAgreements";
 import useAxiosPublic from "../../../Hooks/useAxiosPublic";
 import { AuthContext } from "../../../Providers/AuthProviders";
+import Swal from "sweetalert2";
 
 const CheckoutForm = () => {
     const {user} = useContext(AuthContext)
@@ -13,7 +14,7 @@ const CheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
     const axiosPublic = useAxiosPublic();
-    const [agreement] = useAgreements()
+    const [agreement,refetch] = useAgreements()
     const totalPrice = agreement.reduce((total, agreement) => total + agreement.rent, 0)
 
     useEffect( () => {
@@ -80,6 +81,17 @@ const CheckoutForm = () => {
               }
               const res = await axiosPublic.post('/payments', payment);
             console.log('payment saved', res.data)
+            refetch()
+            if(res.data?.paymentResult?.insertedId){
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your payment is successful",
+                showConfirmButton: false,
+                timer: 1500
+              });
+            //   navigate('/dashboard/paymentHistory')
+            }
 
 
         }
