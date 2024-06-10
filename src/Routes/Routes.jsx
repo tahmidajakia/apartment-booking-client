@@ -22,6 +22,9 @@ import MakePayment from "../Pages/Member/MakePayment";
 import Payment from "../Pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
 
+import PrivateRoutes from "../Routes/PrivateRoutes";
+// import PrivateRoutes from "./PrivateRoutes";
+
 
 
 
@@ -38,12 +41,12 @@ import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
         {
           path: '/apartment',
           element:<Apartment></Apartment>,
-          loader:() => fetch('http://localhost:5000/apartmentCount')
+          loader:() => fetch('https://hotel-apartment-server.vercel.app/apartmentCount')
         },
         {
           path: '/apartmentDetails/:id',
-          element: <ApartmentDetails></ApartmentDetails>,
-          loader:({params}) => fetch(`http://localhost:5000/apartment/${params.id}`)
+          element: <PrivateRoutes><ApartmentDetails></ApartmentDetails></PrivateRoutes>,
+          loader:({params}) => fetch(`https://hotel-apartment-server.vercel.app/apartment/${params.id}`)
           
         },
         {
@@ -102,7 +105,7 @@ import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
         {
           path: 'agreementRequest',
           element: <AgreementRequest></AgreementRequest>,
-          loader:() => fetch('http://localhost:5000/users')
+          loader:() => fetch('https://hotel-apartment-server.vercel.app/users')
           
         },
         {

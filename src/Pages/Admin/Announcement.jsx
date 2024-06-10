@@ -14,7 +14,7 @@ const Announcement = () => {
         
         
 
-        fetch('http://localhost:5000/announcements', {
+        fetch('https://hotel-apartment-server.vercel.app/announcements', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

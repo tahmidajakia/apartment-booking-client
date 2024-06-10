@@ -14,7 +14,7 @@ const Testimonials = () => {
           <div className='space-y-4 md:w-4/5'>
           <h1>TESTIMONIALS</h1>
           <h1 className='text-4xl font-bold'>What Our Customers Say About Us</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis neque aspernatur sint ipsum aliquid accusantium quaerat, iusto dolor voluptatum deserunt!</p>
+          <p>We always care about our members and always apreciate what they talk about us.When speaking with clients, I refer to testimonials as what our other clients have said about us or what other clients have found.</p>
           </div>
 
 

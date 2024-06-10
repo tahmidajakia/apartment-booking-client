@@ -33,7 +33,7 @@ const LocationMap = () => {
                </div>
                <div className='w-1/2 pt-14 space-y-5'>
                   <h1 className='text-3xl'>Great Location</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa corporis temporibus laudantium fugit eligendi incidunt? Molestiae libero repudiandae, magnam, nisi repellat aliquid reiciendis vero harum nemo consequuntur aut corporis exercitationem omnis. Laborum dolore voluptas porro eius veritatis. Omnis, molestias?</p>
+                  <p>The place to unwind. With all the space to relax, refresh, and be pampered. Carefully conceived and designed to offer unlimited luxury to the discerning traveler, The united states with its 57 suites is a Luxury Business Hotel in Usa that invites you to relish luxury of a different kind. Creating higher heights of comfort and redefining new meanings to luxury, this hotel dedicates its efforts to maintaining world-class standards while constantly providing personal service without intruding on privacy. </p>
                   <button className='bg-green-800 text-white px-5 py-3'>Learn More</button>
                </div>
           </div>

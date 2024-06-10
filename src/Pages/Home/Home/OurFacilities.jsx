@@ -11,28 +11,28 @@ const OurFacilities = () => {
                     <FaHotel className="text-2xl text-green-800"></FaHotel>
                     </div>
                     <h1 className="text-2xl">City Views</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugit!</p>
+                    <p>City View St. George, offer a pictures   living  scenic beauty.</p>
                 </div>
                 <div className="text-center space-y-4">
                     <div className="flex justify-center items-center">
                     <FaSwimmingPool className="text-3xl text-green-800"></FaSwimmingPool>
                     </div>
                     <h1 className="text-2xl">Swimming Pool</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugit!</p>
+                    <p>Learning the basics of swimming  treading water drowning.</p>
                 </div>
                 <div className="text-center space-y-4">
                     <div className="flex justify-center items-center">
                     <FaLocationArrow className="text-2xl text-green-800"></FaLocationArrow>
                     </div>
                     <h1 className="text-2xl">South Facing</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugit!</p>
+                    <p>South-facing homes have continued to attract bad reputation.</p>
                 </div>
                 <div className="text-center space-y-4">
                     <div className="flex justify-center items-center">
                     <FaSubway className="text-2xl text-green-800"></FaSubway>
                     </div>
                     <h1 className="text-2xl">Subway Nearby</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugit!</p>
+                    <p>Beautiful subway is situated near Apartment</p>
                 </div>
             </div>
         </div>

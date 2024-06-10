@@ -7,7 +7,7 @@ const UseApartments = () => {
       const [apartment,setApartment] = useState([]);
       const [loading,setLoading] = useState(true);
       useEffect(() => {
-        fetch(`http://localhost:5000/apartment?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`https://hotel-apartment-server.vercel.app/apartment?page=${currentPage}&size=${itemsPerPage}`)
         .then(res => res.json())
         .then(data => {
             setApartment(data)

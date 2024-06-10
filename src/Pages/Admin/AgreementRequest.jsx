@@ -3,11 +3,23 @@ import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 import Swal from "sweetalert2";
 import { useLoaderData } from "react-router-dom";
+import { useEffect, useState } from "react";
 // import { useLoaderData } from "react-router-dom";
 
 
 const AgreementRequest = () => {
   const user = useLoaderData()
+  const [agreement,setAgreement] = useState()
+
+  useEffect(() => {
+    fetch('https://hotel-apartment-server.vercel.app/agreements')
+    .then(res => res.json())
+    .then(data => {
+        setAgreement(data)
+        console.log(data)
+        
+    })
+  },[])
  
 
 

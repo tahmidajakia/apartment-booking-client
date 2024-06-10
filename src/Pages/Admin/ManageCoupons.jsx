@@ -28,7 +28,7 @@ const ManageCoupons = () => {
             code,discount,description,date
         }
         console.log(coupon)
-        fetch('http://localhost:5000/coupons', {
+        fetch('https://hotel-apartment-server.vercel.app/coupons', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

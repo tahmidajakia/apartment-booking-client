@@ -32,7 +32,7 @@ const ApartmentDetails = () => {
         }
         console.log(agreement)
 
-        fetch('http://localhost:5000/agreements', {
+        fetch('https://hotel-apartment-server.vercel.app/agreements', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json'

@@ -10,7 +10,7 @@ const LuxuryApartment = () => {
     const slider = React.useRef(null)
 
     useEffect(() => {
-        fetch('http://localhost:5000/apartment')
+        fetch('https://hotel-apartment-server.vercel.app/apartment')
         .then(res => res.json())
         .then(data => {
             const specials = data.filter(item => item.category === 'luxury')

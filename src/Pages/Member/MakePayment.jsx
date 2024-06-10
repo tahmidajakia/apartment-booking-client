@@ -18,7 +18,7 @@ const MakePayment = () => {
     return (
         <div>
           <div className="flex justify-center">
-          <h1 className="font-bold mb-10 text-3xl">My Agreement Apartment Details</h1>
+          <h1 className="font-bold mb-10 text-3xl">My Agreement Apartment Details </h1>
           </div>
             <div>
                 {
